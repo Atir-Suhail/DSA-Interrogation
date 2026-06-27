@@ -1,4 +1,4 @@
----------------This is the sum of maximum and average of Subarray of Size k-----------------------------------
+---------------This is the (Brute Force method) sum of maximum and average of Subarray of Size k-----------------------------------
 
 int maxSum = Integer.MIN_VALUE;
 
