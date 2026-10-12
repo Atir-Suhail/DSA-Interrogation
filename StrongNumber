@@ -1,0 +1,32 @@
+package com.atir.Basic.Questions;
+
+import java.util.Scanner;
+
+public class FactorialOfEachDigit {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Your Number");
+		int num = sc.nextInt(); 
+		int sum=0;
+		int tempNum = num;		
+		while(num>0) {
+			int ld = num%10;
+			int fact = 1;
+			for (int i=1;i<=ld;i++) {
+			fact=fact*i;
+			}
+			System.out.println("The factorial of "+ ld + " is " + fact);
+			sum=sum+fact;
+			num=num/10;
+		
+		}
+		System.out.println("Sum is ---------------------------------->");
+		System.out.println("Sum is " + sum);
+		if(sum==tempNum) {
+			System.out.println(tempNum + " is a Strong Number");
+		}
+	}
+}
+
